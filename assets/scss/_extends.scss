@@ -6,3 +6,15 @@
   text-shadow: 0 0 5px darken($color-dark, 14%),
     0 0 20px darken($color-dark, 14%);
 }
+
+%item-margin-padding {
+  padding-left: $gap / 2;
+  padding-right: $gap / 2;
+  margin-bottom: $gap;
+}
+
+%row-margin-padding {
+  margin-left: -$gap / 2;
+  margin-right: -$gap / 2;
+  margin-bottom: -$gap;
+}

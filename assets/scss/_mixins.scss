@@ -43,3 +43,27 @@
 
   border: 0;
 }
+
+@mixin after-line($w: 360px) {
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    height: 3px;
+    width: calc(100% - #{$w});
+    background-color: lighten($color-accent, 25%);
+  }
+}
+
+@mixin before-line($l: 0) {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: 10px;
+    height: 3px;
+    width: 27px;
+    background-color: lighten($color-accent, 25%);
+  }
+}
