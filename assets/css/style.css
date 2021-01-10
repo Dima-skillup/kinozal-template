@@ -83,49 +83,15 @@
   transition: background-color 0.25s;
 }
 
-.top-films__body {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.top-films__list {
-  margin-bottom: 0;
-}
-
-.top-films__item {
-  margin-right: -1px;
-  margin-left: -1px;
-  background-color: transparent;
-  padding-right: 55px;
-}
-
-.top-films__item:first-child {
-  border-top: none;
-  border-radius: 0;
-}
-
-.top-films__item:last-child {
+.embed-responsive {
+  border: 1px solid #dddddd;
   border-bottom: none;
-  border-radius: 0;
+  border-radius: 4px 4px 0 0;
 }
 
-.top-films__item:hover, .top-films__item:focus {
-  background-color: #df8a13 !important;
-  border-color: #df8a13;
-  color: #fff !important;
-}
-
-.top-films__item:hover .badge, .top-films__item:focus .badge {
-  background-color: #232323;
-}
-
-.top-films__badge {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+.well {
+  border-color: #dddddd;
+  background-color: #f1f1f1;
 }
 
 html {
@@ -298,7 +264,32 @@ section {
   color: #df8a13;
 }
 
-.panel:last-of-type {
+.film-info {
+  font-size: 1.2rem;
+}
+
+.film-info__wrapper {
+  white-space: nowrap;
+}
+
+.film-info__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.film-info__badge {
+  font-size: 0.8em;
+}
+
+.film-info__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-comment-form__btn {
+  float: right;
+}
+
+.left-sidebar .panel:last-of-type {
   margin-bottom: 0;
 }
 
@@ -389,6 +380,51 @@ section {
   -webkit-transition: 0.25s color;
   -o-transition: 0.25s color;
   transition: 0.25s color;
+}
+
+.top-films__body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.top-films__list {
+  margin-bottom: 0;
+}
+
+.top-films__item {
+  margin-right: -1px;
+  margin-left: -1px;
+  background-color: transparent;
+  padding-right: 55px;
+}
+
+.top-films__item:first-child {
+  border-top: none;
+  border-radius: 0;
+}
+
+.top-films__item:last-child {
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.top-films__item:hover, .top-films__item:focus {
+  background-color: #df8a13 !important;
+  border-color: #df8a13;
+  color: #fff !important;
+}
+
+.top-films__item:hover .badge, .top-films__item:focus .badge {
+  background-color: #232323;
+}
+
+.top-films__badge {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .footer {
