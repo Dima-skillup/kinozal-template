@@ -97,7 +97,6 @@
 .glyphicon-user,
 .glyphicon-log-in {
   position: relative;
-  top: -4px;
   display: inline-block;
   font-family: "Glyphicons Halflings";
   font-style: normal;
@@ -495,6 +494,20 @@ section {
     font-size: 3.5rem;
     margin-right: -15px;
     letter-spacing: 0.33em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glyphicon-user,
+  .glyphicon-log-in {
+    top: 1px;
+  }
+}
+
+@media (max-width: 1199.8px) {
+  .glyphicon-user,
+  .glyphicon-log-in {
+    top: -4px;
   }
 }
 

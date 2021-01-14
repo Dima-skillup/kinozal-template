@@ -107,11 +107,17 @@
 .glyphicon-user,
 .glyphicon-log-in {
   position: relative;
-  top: -4px;
+
   display: inline-block;
   font-family: "Glyphicons Halflings";
   font-style: normal;
   font-weight: 400;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+  @include lg-min {
+    top: 1px;
+  }
+  @include lg {
+    top: -4px;
+  }
 }
