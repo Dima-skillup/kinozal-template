@@ -114,10 +114,8 @@
   font-weight: 400;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  @include lg-min {
-    top: 1px;
-  }
-  @include lg {
+
+  @include md {
     top: -4px;
   }
 }

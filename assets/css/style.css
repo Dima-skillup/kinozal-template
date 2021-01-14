@@ -497,14 +497,7 @@ section {
   }
 }
 
-@media (min-width: 1200px) {
-  .glyphicon-user,
-  .glyphicon-log-in {
-    top: 1px;
-  }
-}
-
-@media (max-width: 1199.8px) {
+@media (max-width: 991.8px) {
   .glyphicon-user,
   .glyphicon-log-in {
     top: -4px;
